@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Sample Dropdown Menu</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: blueviolet
+        }
+        header {
+            background-color: lightcoral;
+            width: 100%;
+            height: 50px;
+            top: 0px;
+        }
+        ul {
+            list-style-type: none;
+            float: right;
+            margin-right: 40px;
+        }
+        li {
+            display: inline;
+            color: white;
+            font-weight: bold;
+            padding: 25px;
+            margin-right: 0px;
+        }
+        .dropdowna {
+            display: inline-block;
+            z-index: 1;
+            color: white;
+            margin-top: -35px;
+            position: relative;
+        }
+        .dropdown-content {
+            color: white;
+            display: none;
+            background-color: lightcoral;
+            z-index: 1;
+            position: absolute;
+            min-width: 160px;
+        }
+        .dropdowna:hover .dropdown-content {
+            display: inline-grid;
+            z-index: 1;
+            margin-top: 10px;
+        }
+        .second-header {
+            background-color: rgba(255,155,200,0.4);
+            width: 100%;
+            height: 50px;
+            margin-top: 50px;
+        }
+        .second-header > ul {
+            list-style-type: none;
+            float: left;
+            margin-right: -10px;
+        }
+        .second-header li {
+            display: inline;
+            color: white;
+            font-weight: bold;
+            padding: 25px;
+            margin-right: 0px;
+        }
+        .dropdownb {
+            display: inline-block;
+            z-index: 1;
+            color: white;
+            margin-top: -55px;
+            position: relative;
+        }
+        .dropdown-contentb {
+            color: white;
+            display: none;
+            background-color: rgba(255,155,200,0.4);
+            z-index: -1;
+            width: 660px;
+            position: absolute;
+            margin-left: -80px !important;
+        }
+        .dropdownb:hover .dropdown-contentb {
+            display: inline-grid;
+            z-index: 1;
+            margin-top: 34px;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Portfolio</li>
+            <li class="dropdowna">Dropdown
+               <div class="dropdown-content">
+                    <li>Dropdown-1</li>
+                    <li>Dropdown-2</li>
+                    <li>Dropdown-3</li>
+                    <li>Dropdown-4</li>
+                    <li>Dropdown-5</li>
+                    <li>Dropdown-6</li>
+               </div>
+            </li>
+            <li>Contact</li>
+    </ul>
+    </header> 
+    
+    <header class="second-header">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Portfolio</li>
+            <li class="dropdownb">Dropdown
+               <div class="dropdown-contentb">
+                    <li>Dropdown-1</li>
+                    <li>Dropdown-2</li>
+                    <li>Dropdown-3</li>
+                    <li>Dropdown-4</li>
+                    <li>Dropdown-5</li>
+                    <li>Dropdown-6</li>
+               </div>
+            </li>
+            <li>Contact</li>
+    </ul>
+    </header> 
+    
+    
+    
+    
+</body>
+</html>
